@@ -39,6 +39,14 @@ async function insertarDatosDePrueba() {
                 marcas_especiales: [
                     { nombre: 'Adidas', valor: 85, user_id: 'user1' }
                 ]
+            },
+            {
+                nombre: 'Zapatillas_Sin_Stock',
+                stock: 0,
+                precio_base: 90,
+                marcas_especiales: [
+                    { nombre: 'Adidas', valor: 0, user_id: 'user1' }
+                ]
             }
         ];
 

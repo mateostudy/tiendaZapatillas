@@ -1,7 +1,7 @@
 const Producto = require('../modelos/producto');
 
-const getProductosEnStock = () => {
-    return Producto.find({ stock: { $gt: 0 } });
+async function getProductosEnStock () {
+    return Producto.find({ stock: { $gt: 0 } }).exec();
 };
 
 async function getPriceForCliente(user_id, nombre_producto) {
